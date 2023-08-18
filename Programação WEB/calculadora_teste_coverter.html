@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conversor de Quilômetros e Milhas</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			text-align: center;
+			color: #333;
+			margin-top: 50px;
+		}
+		form {
+			width: 400px;
+			margin: 0 auto;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			color: #666;
+			font-size: 16px;
+		}
+		input[type="number"] {
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			margin-bottom: 20px;
+			font-size: 16px;
+			box-sizing: border-box;
+		}
+		input[type="submit"] {
+			background-color: #008CBA;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		.result {
+			margin-top: 20px;
+			background-color: #008CBA;
+			color: #fff;
+			padding: 10px;
+			border-radius: 5px;
+			font-size: 16px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Conversor de Quilômetros e Milhas</h1>
+	<form onsubmit="return false;">
+		<label>Quilômetros</label>
+		<input type="number" id="km">
+		<label>Milhas</label>
+		<input type="number" id="mi">
+		<input type="submit" value="Converter" onclick="converter()">
+	</form>
+	<div class="result" id="result"></div>
+
+	<script>
+		function converter() {
+			var km = document.getElementById('km').value;
+			var mi = document.getElementById('mi').value;
+			if (km !== '') {
+				document.getElementById('mi').value = (km / 1.60934).toFixed(2);
+			} else if (mi !== '') {
+				document.getElementById('km').value = (mi * 1.60934).toFixed(2);
+			} else {
+				document.getElementById('result').innerHTML = 'Preencha pelo menos um campo.';
+			}
+		}
+	</script>
+</body>
+</html>

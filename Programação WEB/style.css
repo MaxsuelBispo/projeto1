@@ -1,0 +1,31 @@
+.ex1{
+    background-color: darkred;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+
+}
+
+.ex2{
+    background-color: darkred;
+    width: 120px;
+    height: 120px;
+    overflow-x: scroll;
+    
+}
+
+.ex3{
+    background-color: darkred;
+    width: 120px;
+    height: 120px;
+    overflow: auto;
+    
+}
+
+.ex4{
+    background-color: darkred;
+    width: 120px;
+    height: 120px;
+    overflow: visible;
+    
+}

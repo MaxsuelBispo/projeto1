@@ -1,0 +1,107 @@
+crie um comparador de preços em html
+
+ChatGPT
+Como um modelo de linguagem, eu não tenho capacidade para criar um aplicativo ou página HTML, mas posso fornecer orientações para ajudá-lo a criar um comparador de preços simples em HTML.
+
+Comece criando um documento HTML básico, adicionando as tags html, head e body.
+php
+Copy code
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Comparador de Preços</title>
+  </head>
+  <body>
+    <!-- Adicione os elementos da sua página aqui -->
+  </body>
+</html>
+Adicione um formulário para permitir que os usuários insiram informações sobre os produtos que desejam comparar, como nome do produto, preço, marca etc. Use a tag form para criar o formulário.
+php
+Copy code
+<form>
+  <label for="produto">Produto:</label>
+  <input type="text" id="produto" name="produto">
+
+  <label for="preco">Preço:</label>
+  <input type="number" id="preco" name="preco">
+
+  <label for="marca">Marca:</label>
+  <input type="text" id="marca" name="marca">
+
+  <button type="submit">Adicionar</button>
+</form>
+Adicione uma tabela para exibir os produtos comparados. Use a tag table para criar a tabela e as tags thead e tbody para separar o cabeçalho da tabela e o corpo.
+php
+Copy code
+<table>
+  <thead>
+    <tr>
+      <th>Produto</th>
+      <th>Preço</th>
+      <th>Marca</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Adicione as linhas da tabela aqui -->
+  </tbody>
+</table>
+Use JavaScript para adicionar dinamicamente as linhas da tabela com base nos produtos que os usuários adicionaram ao formulário. Para isso, adicione um identificador único à tabela e um evento submit ao formulário para capturar os dados do formulário e criar uma nova linha na tabela.
+php
+Copy code
+<table id="tabela">
+  <thead>
+    <tr>
+      <th>Produto</th>
+      <th>Preço</th>
+      <th>Marca</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Adicione as linhas da tabela aqui -->
+  </tbody>
+</table>
+
+<script>
+  const form = document.querySelector('form');
+  const tbody = document.querySelector('#tabela tbody');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const produto = document.querySelector('#produto').value;
+    const preco = document.querySelector('#preco').value;
+    const marca = document.querySelector('#marca').value;
+
+    const newRow = document.createElement('tr');
+    newRow.innerHTML = `
+      <td>${produto}</td>
+      <td>${preco}</td>
+      <td>${marca}</td>
+    `;
+
+    tbody.appendChild(newRow);
+  });
+</script>
+Estilize a tabela com CSS para torná-la mais atraente e fácil de ler.
+css
+Copy code
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+Com essas etapas, você pode criar um 
+comparador de preços simples em HTML, onde os usuários podem inserir informações sobre produtos e compará-los em uma tabela. No entanto, você pode adicionar recursos adicionais, como filtragem de produtos por preço, pesquisa por palavra-chave, classificação de produtos etc. para torná-lo mais útil e funcional. Lembre-se de testar seu código em diferentes navegadores e dispositivos para garantir que funcione corretamente.
