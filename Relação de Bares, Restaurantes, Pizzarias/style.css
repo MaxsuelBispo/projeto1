@@ -43,3 +43,8 @@ body {
 .item a:hover {
     color: #0056b3;
 }
+
+.logo {
+    max-width: 80px;
+
+}
