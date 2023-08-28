@@ -1,13 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Relatório de Visita Técnica - Campus Colorado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0066cc;
+        }
+
+        h2 {
+            color: #009900;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .gallery-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            overflow-x: scroll; /* Adicionando rolagem horizontal */
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery img {
+            max-width: 200px;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilos do modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            overflow: auto; /* Adicionando rolagem para outras imagens */
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <h1>
-      Teste de hospedagem.
-    </h1>
+    <div class="container">
+        <h1>Relatório de Visita Técnica - Campus Colorado</h1>
+        <p>Autor: Maxsuel Fernandes Bispo</p>
+        <p>Turma: 3° B</p>
+        <p>Curso: Técnico em Informática Integrado ao Ensino Médio</p>
+        <p>Ano: 2023</p>
+    </div>
+    
+    <div class="container">
+        <h2>Objetivo da Visita Técnica</h2>
+        <p>A visita técnica realizada em 16/08/2013 ao IFRO - Campus Colorado teve como objetivo proporcionar uma perspectiva de trabalho em diversas áreas, incluindo ensino, pesquisa e extensão. Durante a visita, foram abordados problemas práticos, estudos científicos e o compartilhamento dos resultados obtidos.</p>
+    </div>
+    
+    <div class="container">
+        <h2>Projetos em Destaque</h2>
+        <p>Ao longo da visita, foram apresentados projetos significativos que contribuem para o desenvolvimento do campus:</p>
+        <ul>
+            <li>
+                <strong>Projeto Judô</strong> (2011 - 2016)
+                <p>O Projeto Judô, com atividades de extensão e um canal no YouTube, promove o lazer interno, incentiva a prática do judô e busca o crescimento contínuo dos participantes.</p>
+            </li>
+            <li>
+                <strong>Projeto Ensilagem / Silagem BR</strong> (2015 - 2020)
+                <p>Este projeto envolveu animações 2D, 3D e filmagens, contribuindo para a pesquisa e inovação tecnológica. Além disso, disponibilizou conteúdo técnico por meio de atividades de extensão.</p>
+            </li>
+            <li>
+                <strong>Silagem BR</strong> (2021-2023)
+                <p>O Projeto Silagem BR, em andamento, abrange atividades de extensão, podcast e presença nas redes sociais, buscando ampliar seu alcance e impacto.</p>
+            </li>
+            <li>
+                <strong>IFRO Mobile</strong> (2018)
+                <p>O IFRO Mobile resultou na criação de um aplicativo para o Campus Colorado, oferecendo uma ferramenta útil para a comunidade educacional local.</p>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <h2>Dicas para Soluções de Problemáticas</h2>
+        <p>Durante a visita, foram compartilhadas valiosas dicas para enfrentar desafios e desenvolver soluções:</p>
+        <ul>
+            <li>Produza conteúdo relevante e significativo.</li>
+            <li>Busque o conhecimento necessário para resolver problemas de forma eficaz.</li>
+            <li>Comece a trabalhar mesmo em condições desfavoráveis; a ação é o primeiro passo para o sucesso.</li>
+            <li>Esteja sempre atento às problemáticas e às necessidades da comunidade.</li>
+            <li>Promova o desenvolvimento de soluções inovadoras para o setor agro/agro negócio.</li>
+            <li>Valorize as relações interpessoais e a colaboração em equipe.</li>
+            <li>Invista tempo e esforço no desenvolvimento de projetos de impacto.</li>
+        </ul>
+    </div>
+    
+    <div class="gallery-container">
+        <h3>Galeria de Imagens</h3>
+        <div class="gallery">
+            <img src="img_/img1.jpeg" alt="Imagem 1" onclick="openImage(this)">
+            <img src="img_/img2.jpeg" alt="Imagem 2" onclick="openImage(this)">
+            <img src="img_/img3.jpeg" alt="Imagem 3" onclick="openImage(this)">
+            <img src="img_/img4.jpeg" alt="Imagem 4" onclick="openImage(this)">
+            <img src="img_/img5.jpeg" alt="Imagem 5" onclick="openImage(this)">
+            <img src="img_/img6.jpeg" alt="Imagem 6" onclick="openImage(this)">
+            <img src="img_/img7.jpeg" alt="Imagem 7" onclick="openImage(this)">
+            <img src="img_/img8.jpeg" alt="Imagem 8" onclick="openImage(this)">
+            <img src="img_/img9.jpeg" alt="Imagem 9" onclick="openImage(this)">
+            <img src="img_/img10.jpeg" alt="Imagem 10" onclick="openImage(this)">
+            <!-- Adicione mais imagens conforme necessário -->
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal" onclick="closeImage()">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        function openImage(image) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("modalImage");
+            modal.style.display = "block";
+            modalImg.src = image.src;
+        }
+
+        function closeImage() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+    </script>
 </body>
 </html>
