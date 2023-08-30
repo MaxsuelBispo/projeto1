@@ -1,0 +1,41 @@
+Entendi que você precisa criar uma planilha para ajudar o Sr. Antônio a controlar os custos de peças devolvidas. Aqui está um guia passo a passo sobre como fazer isso:
+
+Passo 1: Abra uma planilha
+
+Você pode usar software como o Microsoft Excel ou o Google Sheets para criar sua planilha.
+
+Passo 2: Crie cabeçalhos
+
+Na primeira linha da planilha, crie cabeçalhos para as seguintes colunas:
+
+- Mês (para registrar o mês da devolução).
+- Quantidade de Peças Devolvidas (para registrar quantas peças foram devolvidas no mês).
+- Valor Total do Custo do Mês (para registrar o custo total do mês).
+- Custo por Peça Devolvida (para calcular o custo por peça devolvida).
+
+Passo 3: Insira os dados
+
+Preencha as linhas seguintes com os dados que você coletou. Cada linha representará um mês diferente. Registre a quantidade de peças devolvidas e o valor total do custo do mês para cada mês.
+
+Passo 4: Calcular o Custo por Peça Devolvida
+
+Na coluna "Custo por Peça Devolvida", você pode usar uma fórmula simples para calcular o custo por peça devolvida. A fórmula seria:
+
+`= Valor Total do Custo do Mês / Quantidade de Peças Devolvidas`
+
+Insira essa fórmula na primeira célula da coluna "Custo por Peça Devolvida" e arraste-a para baixo para aplicá-la a todas as linhas.
+
+Passo 5: Criar um Gráfico Comparativo
+
+Agora que você tem seus dados na planilha, pode criar um gráfico comparativo. Siga estas etapas:
+
+- Selecione os dados das colunas "Quantidade de Peças Devolvidas" e "Custo por Peça Devolvida".
+- Vá até a aba de gráficos do seu software (por exemplo, no Excel, você pode encontrar a opção "Inserir Gráfico").
+- Escolha o tipo de gráfico de barras.
+- Personalize o gráfico adicionando um título aos eixos (por exemplo, "Mês" no eixo X e "Quantidade / Custo por Peça" no eixo Y), um título geral para o gráfico e uma legenda.
+
+Passo 6: Salvar o Arquivo
+
+Finalmente, salve o arquivo com o nome "Atividade XLS - Seu Nome Completo".
+
+Certifique-se de consultar o seu livro didático ou pedir ajuda a um professor se você tiver alguma dúvida sobre como criar a planilha e o gráfico.

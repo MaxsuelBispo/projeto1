@@ -1,0 +1,43 @@
+RELATÓRIO
+
+**Título:** Escolha do Sistema Adequado - ERP
+
+**Endereçamento:**
+
+Ao Sr. Seiton, Diretor de Operações
+À Malu e Pedro, Gerentes de Departamento
+
+**Apresentação do Problema:**
+
+A empresa enfrenta desafios significativos em sua gestão de processos e recursos. A ausência de um sistema integrado tem gerado ineficiências operacionais e impactado negativamente a evolução da empresa. Os problemas incluem a falta de visibilidade em tempo real das operações, erros no registro de inventário, dificuldades na coordenação da cadeia de suprimentos e atrasos na entrega de produtos aos clientes. Esses problemas comprometem a qualidade dos serviços prestados e a satisfação dos clientes, ameaçando a competitividade da empresa.
+
+**Causas Identificadas:**
+
+1. **Falta de Integração:** Os sistemas departamentais isolados não se comunicam eficazmente, resultando em redundância de dados e falta de precisão nas informações.
+
+2. **Processos Manuais:** Muitos processos críticos ainda são realizados manualmente, aumentando a probabilidade de erros e atrasos.
+
+3. **Dificuldades na Tomada de Decisão:** A falta de acesso a informações em tempo real dificulta a tomada de decisões informadas e estratégicas.
+
+4. **Ineficiências na Cadeia de Suprimentos:** A falta de coordenação entre as áreas de suprimentos e distribuição resulta em estoques excessivos e custos elevados.
+
+5. **Insatisfação do Cliente:** Os atrasos na entrega e a falta de visibilidade afetam a satisfação do cliente, comprometendo a retenção e a fidelização.
+
+**Conclusão: Solução Sugerida:**
+
+Diante das informações apresentadas e das necessidades da empresa, a implantação de um Sistema ERP (Enterprise Resource Planning) é a solução mais adequada. O ERP é um sistema integrado que abrange todos os aspectos da gestão empresarial, desde finanças e recursos humanos até cadeia de suprimentos e produção. Essa escolha se baseia nos seguintes argumentos:
+
+1. **Integração Total:** Um ERP integrará todos os departamentos da empresa, proporcionando uma visão holística e em tempo real de todas as operações.
+
+2. **Automatização de Processos:** O ERP automatizará muitos processos manuais, reduzindo erros e aumentando a eficiência.
+
+3. **Tomada de Decisão Informada:** A disponibilidade de dados em tempo real permitirá tomadas de decisões mais rápidas e embasadas.
+
+4. **Melhoria da Cadeia de Suprimentos:** O ERP otimizará a gestão de estoque, reduzindo custos e melhorando a coordenação entre suprimentos e distribuição.
+
+5. **Satisfação do Cliente:** Com a entrega pontual e o atendimento eficiente, a satisfação do cliente será melhorada, contribuindo para a retenção e o crescimento do negócio.
+
+Portanto, recomendamos a implantação de um sistema ERP como medida prioritária para superar os desafios enfrentados atualmente.
+
+*Nome da cidade, data*  
+*Assinatura: [Seu Nome e Sobrenome]*

@@ -1,0 +1,51 @@
+04a - SA1 - Atividade 1 - Apresentação
+Descrição:
+APRESENTAÇÃO 
+
+ 
+
+Ajude Malu e Pedro neste desafio!
+
+ 
+
+Elabore uma apresentação com o mínimo de seis slides. Cada sistema (WMS, TMS, ERP) deve ter dois slides dedicados. Todos os slides da sua apresentação devem conter efeitos de transição e um tema único. Utilize o bom senso e não exagere.
+
+
+Depois de pronto, salve seu arquivo com o nome “Atividade PPT – Nome completo”. Utilize o botão abaixo para anexar o arquivo da sua atividade.
+ChatGPT
+
+3 / 3
+
+Entendi que você precisa criar uma apresentação em PowerPoint (PPT) com pelo menos seis slides, dedicando dois slides para cada um dos sistemas: WMS, TMS e ERP. Cada slide deve ter um tema único e conter efeitos de transição sutis. Vou fornecer um exemplo de estrutura para a sua apresentação:
+
+Slide 1: Introdução
+
+Título: O Mundo da Gestão de Sistemas
+Conteúdo: Uma breve introdução ao tema da apresentação.
+Slide 2: WMS - Slide 1
+
+Título: O que é um WMS?
+Conteúdo: Explicação sobre o sistema de Gerenciamento de Armazém (WMS).
+Slide 3: WMS - Slide 2
+
+Título: Benefícios do WMS
+Conteúdo: Destaque os principais benefícios do uso de um WMS.
+Slide 4: TMS - Slide 1
+
+Título: O que é um TMS?
+Conteúdo: Explicação sobre o sistema de Gerenciamento de Transporte (TMS).
+Slide 5: TMS - Slide 2
+
+Título: Vantagens do TMS
+Conteúdo: Destaque as vantagens de implementar um TMS.
+Slide 6: ERP - Slide 1
+
+Título: O que é um ERP?
+Conteúdo: Explicação sobre o sistema de Planejamento de Recursos Empresariais (ERP).
+Slide 7: ERP - Slide 2
+
+Título: Importância do ERP
+Conteúdo: Destaque a importância do ERP na gestão empresarial.
+Lembre-se de utilizar imagens, gráficos ou ícones relevantes para tornar a apresentação mais visualmente atraente. Quanto aos efeitos de transição, você pode optar por transições simples, como fade-in ou slide, para não exagerar.
+
+Depois de criar a apresentação seguindo essa estrutura, salve o arquivo com o nome "Atividade PPT - [Seu Nome Completo]" e anexe-o à sua atividade conforme as instruções fornecidas. Certifique-se de revisar e ajustar o conteúdo conforme necessário para atender aos requisitos específicos da sua tarefa.
