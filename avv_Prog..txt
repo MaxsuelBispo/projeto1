@@ -1,0 +1,33 @@
+. Crie o script JS para deixar o formulário abaixo dinâmico, ele deverá realizar as
+seguintes funções:
+a. No formulário que clicar no botão registrar, o sistema deverá capturar os
+valores dos inputs.
+b. Após capturar os dados o sistema deverá testar se as duas senhas inseridas
+estão iguais e Verificar se o checkbox está marcado, se isso for verdadeiro
+imprimir em um console dos dados inseridos e em um Alert uma mensagem que
+o cadastro foi executado com sucesso, caso contrario imprimir em um Alert que
+não foi possível realizar o cadastro e apresente o erro, senhas diferentes ou não
+foi marcado o checkbox.
+c. No formulário ao clicar no botão Entrar o sistema deverá comparar a senha
+digitada com o email padrão criado por vocês e testar se a senha está correta,
+caso sim imprimir em um Alert que o login foi feito com sucesso ou não.
+
+
+
+
+exemplo abaixo:
+
+Inscreva-se //  Programação WEB (Título)
+
+Nome               Sobrenome
+
+Endereço           Email
+
+Password           Confirm Password 
+
+checkbox (I agree)
+
+
+
+REGISTRAR (botão)        ENTRAR (botão)
+
