@@ -1,0 +1,54 @@
+Certifique-se de incluir o JavaScript em um arquivo separado chamado "script.js" e vinculá-lo ao seu HTML usando uma tag <script> na parte inferior do arquivo HTML antes do fechamento da tag </body>. Isso manterá seu código organizado e separado.
+
+
+
+
+// Função para verificar se as senhas são iguais
+function arePasswordsEqual() {
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("password_confirmation").value;
+    return password === confirmPassword;
+}
+
+// Função para validar o formulário de registro
+function validateRegistration() {
+    const firstName = document.getElementById("first_name").value;
+    const lastName = document.getElementById("Sobrenome").value;
+    const address = document.getElementById("adress").value;
+    const email = document.getElementById("email").value;
+    const passwordMatch = arePasswordsEqual();
+    const agreeCheckbox = document.getElementById("iagree").checked;
+
+    if (passwordMatch && agreeCheckbox) {
+        // Formulário válido, imprimir dados no console e mostrar um alerta de sucesso
+        console.log("Nome:", firstName);
+        console.log("Sobrenome:", lastName);
+        console.log("Endereço:", address);
+        console.log("Email:", email);
+        alert("Cadastro executado com sucesso!");
+    } else {
+        // Formulário inválido, mostrar um alerta de erro
+        if (!passwordMatch) {
+            alert("Senhas diferentes!");
+        } else if (!agreeCheckbox) {
+            alert("Você deve concordar com os termos.");
+        }
+    }
+}
+
+// Função para validar o formulário de login
+function validateLogin() {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    // Verificar se o email e a senha correspondem a um login válido
+    if (email === "seu_email@exemplo.com" && password === "sua_senha") {
+        alert("Login feito com sucesso!");
+    } else {
+        alert("Email ou senha incorretos.");
+    }
+}
+
+// Adicionar eventos de clique aos botões
+document.getElementById("registerButton").addEventListener("click", validateRegistration);
+document.getElementById("loginButton").addEventListener("click", validateLogin);
