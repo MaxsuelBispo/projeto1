@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria "NÓS!"</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .gallery-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-top: 20px;
+        }
+
+        .thumbnails {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .thumbnail {
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border: 2px solid #333;
+            transition: border-color 0.3s, transform 0.3s;
+            cursor: pointer;
+        }
+
+        .thumbnail:hover {
+            border-color: #fff;
+            transform: scale(1.1);
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+        }
+
+        .thumbnail:hover img {
+            filter: grayscale(0%);
+        }
+
+        #fullscreen {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 999;
+        }
+
+        #fullscreen img {
+            max-width: 90%;
+            max-height: 90%;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        #footer {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        #close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: white;
+            font-size: 24px;
+        }
+
+        #prev-button, #next-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: white;
+            font-size: 24px;
+        }
+
+        #prev-button {
+            left: 10px;
+        }
+
+        #next-button {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>NÓS!</h1>
+        <div class="thumbnails">
+            <div class="thumbnail" onclick="showImage(0)"><img src="Bea_/imagenss_/20230901_091138.jpg" alt="Imagem 1"></div>
+            <div class="thumbnail" onclick="showImage(1)"><img src="Bea_/imagenss_/e5b4cfe9406063f558a93edc58c09bd9.jpg" alt="Imagem 2"></div>
+            <div class="thumbnail" onclick="showImage(2)"><img src="Bea_/imagenss_/IMG-20221106-WA0082.jpg" alt="Imagem 3"></div>
+            <div class="thumbnail" onclick="showImage(3)"><img src="Bea_/imagenss_/IMG-20230409-WA0036.jpg" alt="Imagem 4"></div>
+            <div class="thumbnail" onclick="showImage(4)"><img src="Bea_/imagenss_/IMG-20230605-WA0041.jpg" alt="Imagem 5"></div>
+            <div class="thumbnail" onclick="showImage(5)"><img src="Bea_/imagenss_/IMG-20230618-WA0008.jpg" alt="Imagem 6"></div>
+            <div class="thumbnail" onclick="showImage(6)"><img src="Bea_/imagenss_/IMG-20230701-WA0028.jpg" alt="Imagem 7"></div>
+            <div class="thumbnail" onclick="showImage(7)"><img src="Bea_/imagenss_/IMG-20230810-WA0089.jpg" alt="Imagem 8"></div>
+            <div class="thumbnail" onclick="showImage(8)"><img src="Bea_/imagenss_/IMG-20230812-WA0027.jpg" alt="Imagem 9"></div>
+            <div class="thumbnail" onclick="showImage(9)"><img src="Bea_/imagenss_/IMG-20230813-WA0070.jpg" alt="Imagem 10"></div>
+        </div>
+        <div id="fullscreen">
+            <span id="close-button" onclick="closeFullscreen()">&#10006;</span>
+            <span id="prev-button" onclick="prevImage()">&#9664;</span>
+            <span id="next-button" onclick="nextImage()">&#9654;</span>
+            <img id="fullscreen-img" src="" alt="Imagem em tela cheia">
+        </div>
+        <div id="footer">
+            De Maxsuel Bispo para Beatriz Jensen.
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+
+        function showImage(index) {
+            currentIndex = index;
+            const imageSrc = document.querySelectorAll('.thumbnail img')[index].src;
+            const fullscreenImg = document.getElementById('fullscreen-img');
+            fullscreenImg.src = imageSrc;
+            document.getElementById('fullscreen').style.display = 'block';
+        }
+
+        function closeFullscreen() {
+            document.getElementById('fullscreen').style.display = 'none';
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + 10) % 10;
+            showImage(currentIndex);
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % 10;
+            showImage(currentIndex);
+        }
+    </script>
+</body>
+</html>
